@@ -6,3 +6,4 @@ scikit-image
 matplotlib
 keras
 tensorflow
+python==3.8

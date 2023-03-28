@@ -7,8 +7,8 @@ import skimage.io as sk
 from glob import glob
 import cv2
 import numpy as np
-
-st.write("Welcome to Image reconstruction web-interface")
+st.set_page_config(page_title='Image-Reconstruction.AI-Home', layout = 'wide', page_icon = 'logo.png', initial_sidebar_state = 'auto')
+st.title("Welcome to :blue[Image Reconstruction.AI ]")
 demo=glob("./dataset/*")
 
 demo_file = st.selectbox("Download demo images",demo)
@@ -26,6 +26,7 @@ if file is not None:
         f.write(file.getvalue())
     single_image=sk.imread(file_name)
     st.image(file_name)
+    
     if single_image.shape[2]==4:
         lower=np.array([10,2,1,1]) #lower
         higher=np.array([255,255,255,255]) #higher
@@ -107,6 +108,12 @@ hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            .main {background-color: #f8f9d2;
+            background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+            color:black;
+            
+            
+            }
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 

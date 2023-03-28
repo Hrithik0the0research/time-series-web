@@ -3,7 +3,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import numpy as np
 import skimage.io as sk
-import keras
+from keras.models import load_model
 from skimage.transform import resize
 
 def find_contours(mask):

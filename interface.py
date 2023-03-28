@@ -56,7 +56,7 @@ if file is not None:
     st.write(model)
     if model!=" ":
         if model=="LSTM":
-            model1=pickle.load(open("lstm.pkl", "rb"))
+            model1=pickle.load(open("/lstm.pkl", "rb"))
             v=make_inverse(st1,x,z,model1)
 
 

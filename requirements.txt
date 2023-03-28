@@ -1,4 +1,4 @@
-pickle4
+pickle5
 opencv-contrib-python-headless
 opencv-python
 scikit-learn
@@ -6,4 +6,4 @@ scikit-image
 matplotlib
 keras
 tensorflow
-python==3.8
+

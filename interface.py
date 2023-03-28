@@ -4,6 +4,7 @@ import math
 import matplotlib.pyplot as plt
 import random 
 import skimage.io as sk
+from keras.models import load_model
 from glob import glob
 import cv2
 import numpy as np

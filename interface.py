@@ -57,7 +57,7 @@ if file is not None:
     st.write(model)
     if model!=" ":
         if model=="LSTM":
-            model1=pickle.load(open("lstm.pkl", "rb"))
+            model1=load_model("lstm.h5")
             v=make_inverse(st1,x,z,model1)
 
 
@@ -82,7 +82,7 @@ if file is not None:
 
 
         else:
-            model1=pickle.load(open("mlp.pkl","rb"))
+            model1=load_model("mlp.h5")
             v1=model1.predict(x[:-100])
             v11=make_inverse_mlp(v1,st1)
             import math

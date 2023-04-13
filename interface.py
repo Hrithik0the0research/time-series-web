@@ -1,5 +1,6 @@
 import streamlit as st
 from construction import *
+from PIL import Image
 import math
 import matplotlib.pyplot as plt
 import random 
@@ -20,11 +21,30 @@ with open(demo_file, "rb") as file:
                 data=file,
                 file_name="demo.png")
 name=random.randint(1,10000)
+
+ 
+def convertImage(img,file_name):
+    img = Image.open(img)
+    img = img.convert("RGBA")
+ 
+    datas = img.getdata()
+ 
+    newData = []
+ 
+    for item in datas:
+        if item[0] == 255 and item[1] == 255 and item[2] == 255:
+            newData.append((255, 255, 255, 0))
+        else:
+            newData.append(item)
+ 
+    img.putdata(newData)
+    img.save(file_name, "PNG")
 file=st.file_uploader("Upload an image but don't upload any black&white image",[".png",".jpg",".webp","jpeg"])
 if file is not None:
     file_name="fig"+str(name)+".png"
     with open(file_name, mode='bx') as f:
         f.write(file.getvalue())
+    convertImage(file_name,file_name)
     single_image=sk.imread(file_name)
     st.image(file_name)
     

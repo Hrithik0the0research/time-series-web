@@ -20,7 +20,7 @@ with open(demo_file, "rb") as file:
                 data=file,
                 file_name="demo.png")
 name=random.randint(1,10000)
-file=st.file_uploader("Upload an image",[".png",".jpg",".webp","jpeg"])
+file=st.file_uploader("Upload an image but don't upload any black&white image",[".png",".jpg",".webp","jpeg"])
 if file is not None:
     file_name="fig"+str(name)+".png"
     with open(file_name, mode='bx') as f:
@@ -29,11 +29,11 @@ if file is not None:
     st.image(file_name)
     
     if single_image.shape[2]==4:
-        lower=np.array([10,2,1,1]) #lower
+        lower=np.array([1,1,1,1]) #lower
         higher=np.array([255,255,255,255]) #higher
         mask=cv2.inRange(single_image,lower,higher)
     else:
-        lower=np.array([10,2,1]) #lower
+        lower=np.array([1,1,1]) #lower
         higher=np.array([255,255,255]) #higher
         mask=cv2.inRange(single_image,lower,higher)
 

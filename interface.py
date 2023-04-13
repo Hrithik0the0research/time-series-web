@@ -78,6 +78,7 @@ if file is not None:
             compare_img(file_name,single_image,cb,v)
             st.write("Blue is for real and Red is predicted using propsed model")
             st.image("compare.jpg")
+            st.write("Here Blue part shows the real contour or whole shape of the object where the Red part is predicted. And except the Blue part and Red part, total 100 pixels have been discarted and trained the model. After training it, the model has predicted which shows in red color.")
 
 
 
@@ -100,6 +101,7 @@ if file is not None:
             compare_img_in_mpl(single_image,cb,v11)
             st.write("Blue is for real and Green is predicted using propsed model")
             st.image("compare1.jpg")
+            st.write("Here Blue part shows the real contour or whole shape of the object where the Green part is predicted. And except the Blue part and Green part, total 100 pixels have been discarted and trained the model. After training it, the model has predicted which shows in green color.")
 
     #plt.axis("off")
     #mask=image_data

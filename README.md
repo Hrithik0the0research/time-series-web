@@ -15,6 +15,13 @@ link: https://image-reconstruction-ai.streamlit.app/
 
 (Note: It can be seen that the web app is in sleep mode, as it automatically detects not traffic, So, click "Yes, get the app back up!" button, then the web-app automatically starts)
 How to use it?
+
 Video Process:-
+
+
+
+
+https://github.com/Hrithik0the0research/time-series-web/assets/121748257/04e616f5-24db-4948-b81b-e2979da6c4d1
+
 
 

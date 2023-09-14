@@ -2,9 +2,11 @@ For a long time, time series have been an extensively researched topic of discus
 A newly developed web application permits users to upload a photograph and generate either a complete or half of it.
 
 Benefits: 
-Markup :
+
 *Reconstruct the desired part of desired image.
+
 *Has ability to reconstruct the half-part even the image doesn't have it. 
+
 *Take less space and time.
   
  

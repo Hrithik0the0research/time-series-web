@@ -16,6 +16,11 @@ link: https://image-reconstruction-ai.streamlit.app/
 (Note: It can be seen that the web app is in sleep mode, as it automatically detects not traffic, So, click "Yes, get the app back up!" button, then the web-app automatically starts)
 How to use it?
 
+Copyright certification:- 
+
+![EDGEPREDICTOR_page-0001(1)](https://github.com/Hrithik0the0research/time-series-web/assets/121748257/71455e62-a418-4ecd-91c7-c412806571b0)
+
+
 Video Process:-
 
 

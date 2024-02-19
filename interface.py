@@ -10,7 +10,7 @@ from glob import glob
 import cv2
 import numpy as np
 st.set_page_config(page_title='EDGE-PREDICTOR', layout = 'wide', page_icon = 'logo.png', initial_sidebar_state = 'auto')
-st.title("Welcome to :blue[Image Reconstruction.AI ]")
+st.title("Welcome to :blue[EDGE-PREDICTOR]")
 demo=glob("./dataset/*")
 
 demo_file = st.selectbox("Download demo images",demo)

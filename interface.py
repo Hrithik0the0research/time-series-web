@@ -9,7 +9,7 @@ from keras.models import load_model
 from glob import glob
 import cv2
 import numpy as np
-st.set_page_config(page_title='Image-Reconstruction.AI-Home', layout = 'wide', page_icon = 'logo.png', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='EDGE-PREDICTOR', layout = 'wide', page_icon = 'logo.png', initial_sidebar_state = 'auto')
 st.title("Welcome to :blue[Image Reconstruction.AI ]")
 demo=glob("./dataset/*")
 
